@@ -1,0 +1,32 @@
+<div class="post-list">
+@foreach (IDocument post in Model.DocumentList(Keys.PageDocuments))
+{
+    DateTime time = post.Get<DateTime>(BlogKeys.Published);
+    String timeFormat = "yyyy-MM-dd";
+    <article class="post">
+        <header>
+            <h2 class="post-title">
+                <a href="@Context.GetLink(post)">@post.WithoutSettings.String(BlogKeys.Title)</a>
+            </h2>
+            <div class="post-meta"><time datetime="@(time.ToString(timeFormat))">@(time.ToLongDateString(Context))</time></div>
+        </header>
+        <section class="post-content">
+            @Html.Raw(post.String(BlogKeys.Excerpt))
+        </section>
+    </article>
+}
+</div>
+
+@if (Model.Bool(Keys.HasPreviousPage))
+{
+<div class="button-link">
+    <a href="@(Context.GetLink(Model.Document(Keys.PreviousPage)))"><span aria-hidden="true">&larr;</span> Newer</a>
+</div>
+}
+
+@if (Model.Bool(Keys.HasNextPage))
+{
+<div class="button-link">
+    <a href="@(Context.GetLink(Model.Document(Keys.NextPage)))">Older <span aria-hidden="true">&rarr;</span></a>
+</div>
+}

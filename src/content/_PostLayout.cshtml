@@ -1,0 +1,26 @@
+@{
+    Layout="_Layout";
+    var tags = Model.Get<string[]>(BlogKeys.Tags) ?? new string[] {};
+    DateTime time = Model.Get<DateTime>(BlogKeys.Published);
+    String timeFormat = "yyyy-MM-dd";
+}
+<div class="post-list">
+    <article class="post">
+        <header>
+            <h2 class="post-title">@Model.WithoutSettings.String(BlogKeys.Title)</h2>
+            <div class="post-meta"><time datetime="@(time.ToString(timeFormat))">@(time.ToLongDateString(Context))</time></div>
+            @foreach (string tag in tags.OrderBy(x => x))
+            {
+                IDocument tagDocument = Documents[Blog.Tags].FirstOrDefault(x => x.String(BlogKeys.Tag) == tag && x.Get<int>(Keys.CurrentPage) == 1);
+                if (tagDocument != null)
+                {
+            <div class="button-link tag"><a href="@Context.GetLink(tagDocument)">@tag</a></div>
+                }
+            }
+        </header>
+
+        <section class="post-content">
+            @RenderBody()
+        </section>
+    </article>
+</div>

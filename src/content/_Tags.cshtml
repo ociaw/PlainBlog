@@ -1,0 +1,11 @@
+Title: All Tags
+---
+<h2>All Tags</h2>
+@foreach (IDocument tagDocument in Documents[Blog.Tags]
+    .GroupBy(x => x.String(BlogKeys.Tag)).Select(x => x.Where(p => p.Get<int>(Keys.CurrentPage) == 1).First())
+    .OrderByDescending(x => x.Get<int>(Keys.TotalItems)))
+{
+    string tag = tagDocument.String(BlogKeys.Tag);
+    string postCount = tagDocument.String(Keys.TotalItems);
+    <div class="button-link tag"><a href="@Context.GetLink(tagDocument)">@tag <span class="tag-post-count">@postCount</span></a></div>
+}
