@@ -2,11 +2,15 @@
 <package>
   <metadata minClientVersion="3.3.0">
     <id>Ociaw.Wyam.PlainBlog</id>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
     <authors>ociaw</authors>
     <owners>ociaw</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A simple theme for Wyam's blog recipe.</description>
     <tags>wyam</tags>
+    <releaseNotes>
+        Fixed embedded images overflowing their container.
+        Added MIT License.
+    </releaseNotes>
   </metadata>
 </package>
