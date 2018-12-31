@@ -2,9 +2,13 @@
 <package>
   <metadata minClientVersion="3.3.0">
     <id>Ociaw.Wyam.PlainBlog</id>
-    <version>0.2.1</version>
+    <version>0.2.2</version>
     <authors>ociaw</authors>
     <owners>ociaw</owners>
+    <projectUrl>https://github.com/ociaw/PlainBlog</projectUrl>
+    <license type="expression">MIT</license>
+    <repository type="git" url="https://github.com/ociaw/PlainBlog" />
+    <language>en-US</language>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A simple theme for Wyam's blog recipe.</description>
     <tags>wyam</tags>
