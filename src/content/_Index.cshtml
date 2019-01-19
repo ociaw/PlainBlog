@@ -35,17 +35,16 @@
     </article>
 }
 </div>
+<div class="spacer"></div>
 <div class="control-container">
-@if (Model.Bool(Keys.HasPreviousPage))
-{
-    <div class="button-link">
+@{
+    var previousDisabled = Model.Bool(Keys.HasPreviousPage) ? "" : "disabled";
+    var nextDisabled = Model.Bool(Keys.HasNextPage) ? "" : "disabled";
+}
+    <div @previousDisabled class="button-link">
         <a href="@(Context.GetLink(Model.Document(Keys.PreviousPage)))"><span aria-hidden="true">&larr;</span> Newer</a> 
     </div>
-}
-@if (Model.Bool(Keys.HasNextPage))
-{
-    <div class="button-link">
+    <div @nextDisabled class="button-link">
         <a href="@(Context.GetLink(Model.Document(Keys.NextPage)))">Older <span aria-hidden="true">&rarr;</span></a>
     </div>
-}
 </div>
