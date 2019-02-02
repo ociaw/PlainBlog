@@ -1,2 +1,4 @@
 builds/
+.vscode/
 *.exe
+*.code-workspace
