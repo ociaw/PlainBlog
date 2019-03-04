@@ -15,7 +15,7 @@ nav
 
 main
 {
-  font-size: 13.5pt;
+  font-size: 1.125rem;
 }
 
 body > main
@@ -64,14 +64,14 @@ pre
 {
   border: 2px dashed #CCC;
   overflow-x: auto;
-  font-size: 12pt;
+  font-size: 1rem;
   background-color: rgba(249, 249, 234, .80);
   color: black;
 }
 
 pre > code
 {
-  padding: .1em;
+  font-family: Consolas, monospace;
 }
 
 .button-link
@@ -231,4 +231,44 @@ pre > code
 .tag-post-count::after
 {
   content: ")";
+}
+
+/* Print styling */
+@media print
+{
+  html
+  {
+    font-size: 13px;
+  }
+  body
+  {
+    height: 100%;
+  }
+  body, body > main, .post-list
+  {
+    /*
+      Firefox can't split pages correctly when we use flexbox
+      so we use display: block and correct other things that depend on flexbox
+    */
+    display: block;
+  }
+  pre
+  {
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+  }
+  body > header, body > footer
+  {
+    display: none;
+  }
+  .post-meta
+  {
+    filter: none;
+  }
+  .post
+  {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
 }
