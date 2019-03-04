@@ -2,7 +2,7 @@
 <package>
   <metadata minClientVersion="3.3.0">
     <id>Ociaw.Wyam.PlainBlog</id>
-    <version>0.2.5</version>
+    <version>0.2.6</version>
     <authors>ociaw</authors>
     <owners>ociaw</owners>
     <projectUrl>https://github.com/ociaw/PlainBlog</projectUrl>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A simple theme for Wyam's blog recipe.</description>
     <tags>wyam</tags>
-    <releaseNotes>Improved color choice and readability on browsers with unusual default text and background colors.
-Fixed broken flexbox rendering on IE 11.</releaseNotes>
+    <releaseNotes>Optimized print styling.
+Set Consolas as the preferred pre font.</releaseNotes>
   </metadata>
 </package>
