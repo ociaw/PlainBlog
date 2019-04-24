@@ -2,7 +2,7 @@
 <package>
   <metadata minClientVersion="3.3.0">
     <id>Ociaw.Wyam.PlainBlog</id>
-    <version>0.2.6</version>
+    <version>0.2.8</version>
     <authors>ociaw</authors>
     <owners>ociaw</owners>
     <projectUrl>https://github.com/ociaw/PlainBlog</projectUrl>
@@ -12,7 +12,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A simple theme for Wyam's blog recipe.</description>
     <tags>wyam</tags>
-    <releaseNotes>Optimized print styling.
-Set Consolas as the preferred pre font.</releaseNotes>
+    <releaseNotes>Restricted width of all pages, not just articles.
+Added css class to the tag list.
+Fixed the scrollbar appearing unnecessarily on certain screenwidths.</releaseNotes>
   </metadata>
 </package>
