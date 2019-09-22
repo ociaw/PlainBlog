@@ -25,13 +25,13 @@ body > main
   flex: 1 0 auto;
   width: 80%;
   /* Account for scrollbars, which are usually 16 pixels wide */
-  min-width: calc(48rem - 16px);
+  min-width: calc(768px - 16px);
   max-width: 64rem;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-@media (max-width: 48rem)
+@media (max-width: 768px)
 {
   body > main
   {
@@ -205,10 +205,10 @@ pre > code
 }
 .archive-month
 {
-  width: 36rem;
+  width: 576px;
 }
 
-@media (max-width: 36rem)
+@media (max-width: 576px)
 {
   .archive-month
   {
