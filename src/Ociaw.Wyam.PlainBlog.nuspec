@@ -2,7 +2,7 @@
 <package>
   <metadata minClientVersion="3.3.0">
     <id>Ociaw.Wyam.PlainBlog</id>
-    <version>0.2.8</version>
+    <version>0.2.9</version>
     <authors>ociaw</authors>
     <owners>ociaw</owners>
     <projectUrl>https://github.com/ociaw/PlainBlog</projectUrl>
@@ -12,8 +12,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A simple theme for Wyam's blog recipe.</description>
     <tags>wyam</tags>
-    <releaseNotes>Restricted width of all pages, not just articles.
-Added css class to the tag list.
-Fixed the scrollbar appearing unnecessarily on certain screenwidths.</releaseNotes>
+    <releaseNotes>Added styling for tables.
+Fixed videos and images exceeding the screen width.
+Breakpoints are now based on pixels, not rems.
+&lt;code&gt; tags line break properly.
+&lt;figcaption&gt; tags are italicized.</releaseNotes>
   </metadata>
 </package>
