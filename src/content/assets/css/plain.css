@@ -96,6 +96,11 @@ pre
   color: black;
 }
 
+code
+{
+  overflow-wrap: break-word;
+}
+
 pre > code
 {
   font-family: Consolas, monospace;
