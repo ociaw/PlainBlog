@@ -106,6 +106,34 @@ pre > code
   font-family: Consolas, monospace;
 }
 
+/* Table styling */
+table
+{
+  border-collapse: collapse;
+}
+
+tr:not(:last-of-type) td
+{
+  border-bottom: 1px solid grey;
+}
+
+td:not(:first-of-type), th:not(:first-of-type)
+{
+  padding-left: 4px;
+}
+
+td:not(:last-of-type), th:not(:last-of-type)
+{
+  padding-right: 4px;
+  border-right: 1px solid grey;
+}
+
+td:not(:first-of-type)
+{
+  text-align: right;
+}
+
+/* Button Links */
 .button-link
 {
   display: inline-block;
