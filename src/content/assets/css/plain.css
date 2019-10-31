@@ -187,7 +187,7 @@ td:not(:first-of-type)
 
 .button-link:not([disabled]) > *:focus
 {
-  outline-color: #FFF;
+  outline-color: currentColor;
 }
 
 .button-link.progressing:not([disabled])
@@ -288,15 +288,14 @@ td:not(:first-of-type)
 
 .tag
 {
-  padding: 1px;
-  border: 1px solid currentColor;
   font-size: .9em;
   background-color: transparent;
   color: #06A;
+  border-color: currentColor;
 }
 .tag a
 {
-  color: inherit;
+  outline-offset: -3px;
 }
 .tag-post-count::before
 {
