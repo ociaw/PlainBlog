@@ -38,11 +38,11 @@
 <div class="spacer"></div>
 <div class="control-container">
 @{
-    var previousDisabled = Model.Bool(Keys.HasPreviousPage) ? "" : "disabled";
-    var nextDisabled = Model.Bool(Keys.HasNextPage) ? "" : "disabled";
+    var previousDisabled = Model.Bool(Keys.HasPreviousPage) ? "" : "disabled aria-hidden=true";
+    var nextDisabled = Model.Bool(Keys.HasNextPage) ? "" : "disabled aria-hidden=true";
 }
     <div @previousDisabled class="button-link">
-        <a href="@(Context.GetLink(Model.Document(Keys.PreviousPage)))"><span aria-hidden="true">&larr;</span> Newer</a> 
+        <a href="@(Context.GetLink(Model.Document(Keys.PreviousPage)))"><span aria-hidden="true">&larr;</span> Newer</a>
     </div>
     <div @nextDisabled class="button-link">
         <a href="@(Context.GetLink(Model.Document(Keys.NextPage)))">Older <span aria-hidden="true">&rarr;</span></a>
