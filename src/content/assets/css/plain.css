@@ -11,6 +11,7 @@ body
   height: 100vh;
   text-align: center;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 nav
@@ -54,7 +55,6 @@ footer
 {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  font-family: 'Times New Roman', serif;
   color: #666;
 }
 
@@ -80,7 +80,7 @@ aside
 h1, h2, h3, h4, h5, h6, #primary-heading
 {
   font-weight: normal;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a
@@ -174,7 +174,7 @@ td:not(:first-of-type)
 {
   display: inline-block;
   margin: .2rem;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
   color: white;
