@@ -2,7 +2,7 @@
 <package>
   <metadata minClientVersion="3.3.0">
     <id>Ociaw.Wyam.PlainBlog</id>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
     <authors>ociaw</authors>
     <owners>ociaw</owners>
     <projectUrl>https://github.com/ociaw/PlainBlog</projectUrl>
@@ -12,9 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A simple theme for Wyam's blog recipe.</description>
     <tags>wyam</tags>
-    <releaseNotes>All elements now use border-box by default.
-Button links are more versitile and can be used with actual buttons.
-Button links have styling for :hover and :focus states.
-Prevented iframes from exceeding parent width.</releaseNotes>
+    <releaseNotes>Enforced usage of serif fonts for most elements.
+Normal links are underlined on hover.
+Added field class to use with inputs and labels.
+Styled &lt;aside&gt; elements distinctly.</releaseNotes>
   </metadata>
 </package>
