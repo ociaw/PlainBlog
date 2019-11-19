@@ -189,7 +189,7 @@ td:not(:first-of-type)
   outline-style: solid;
   outline-color: transparent;
 }
-.button-link a, .button-link a:visited, .button-link a:hover, .button-link button
+.button-link a, .button-link a:visited, .button-link button
 {
   display: inline-block;
   width: 100%;
