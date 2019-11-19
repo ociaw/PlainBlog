@@ -99,6 +99,11 @@ iframe, img, video
   max-height: 100%;
 }
 
+figure
+{
+  margin: 1em 0;
+}
+
 figcaption
 {
   font-style: italic;
