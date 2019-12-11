@@ -351,6 +351,48 @@ td:not(:first-of-type)
   content: ")";
 }
 
+/* Dark Color Scheme Styling */
+@media (prefers-color-scheme: dark)
+{
+  body
+  {
+    color: #CCC;
+    background-color: #202020;
+  }
+  #primary-header
+  {
+    color: #DDD;
+    background-color: #16163F;
+  }
+  footer
+  {
+    color: #999;
+  }
+  pre
+  {
+    background-color: #292929;
+    color: inherit;
+  }
+  a
+  {
+    color: #75b9f4;
+  }
+  .button-link
+  {
+    color: #CCC;
+    background-color: #048;
+  }
+  .tag
+  {
+    color: #09A;
+    background-color: transparent; /* Not necessary in PlainBlog */
+  }
+  .tag.button-link:not([disabled]):hover
+  {
+    outline-color: currentColor;
+  }
+}
+
 /* Print styling */
 @media print
 {
