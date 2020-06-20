@@ -1,6 +1,19 @@
 @{
     string Title = Model.WithoutSettings.String(BlogKeys.Title);
-    string PageTitle = Context.String(BlogKeys.Title) + (string.IsNullOrWhiteSpace(Title) ? string.Empty : " - " + Title);
+    string ShortBlogTitle = Context.String("ShortTitle");
+    String PageTitle;
+    if (string.IsNullOrWhiteSpace(Title))
+    {
+        PageTitle = Context.String(BlogKeys.Title);
+    }
+    else if (string.IsNullOrWhiteSpace(ShortBlogTitle))
+    {
+        PageTitle = Context.String(BlogKeys.Title) + ": " + Title;
+    }
+    else
+    {
+        PageTitle = ShortBlogTitle + ": " + Title;
+    }
 }
 
 <!DOCTYPE html>
