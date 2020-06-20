@@ -178,7 +178,7 @@ td:not(:first-of-type)
 .button-link
 {
   display: inline-block;
-  margin: .2rem;
+  margin: .2rem 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
@@ -211,6 +211,11 @@ td:not(:first-of-type)
   outline-width: 1px;
   outline-style: inherit;
   outline-color: inherit;
+}
+
+.button-link + .button-link
+{
+  margin-left: .4rem;
 }
 
 .button-link[disabled]
