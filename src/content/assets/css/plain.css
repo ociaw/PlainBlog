@@ -361,7 +361,7 @@ td:not(:first-of-type)
 {
   body
   {
-    color: #CCC;
+    color: #D5D5D5;
     background-color: #202020;
   }
   #primary-header
@@ -376,7 +376,7 @@ td:not(:first-of-type)
   pre
   {
     background-color: #292929;
-    color: inherit;
+    color: #DDD;
   }
   a
   {
@@ -384,7 +384,7 @@ td:not(:first-of-type)
   }
   .button-link
   {
-    color: #CCC;
+    color: #D5D5D5;
     background-color: #048;
   }
   .tag
