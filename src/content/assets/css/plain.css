@@ -314,6 +314,12 @@ td:not(:first-of-type)
   filter: invert(33%);
 }
 
+.footnotes
+{
+  margin-top: .5em;
+  border-top: 1px solid grey;
+}
+
 .archive-post
 {
   display: flex;
