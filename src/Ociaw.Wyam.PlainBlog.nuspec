@@ -2,7 +2,7 @@
 <package>
   <metadata minClientVersion="3.3.0">
     <id>Ociaw.Wyam.PlainBlog</id>
-    <version>0.3.4-alpha1</version>
+    <version>0.3.5</version>
     <authors>ociaw</authors>
     <owners>ociaw</owners>
     <projectUrl>https://github.com/ociaw/PlainBlog</projectUrl>
@@ -12,8 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A simple theme for Wyam's blog recipe.</description>
     <tags>wyam</tags>
-    <releaseNotes>Added new setting "ShortBlogTitle" to use in page titles.
-Adjusted the margins around button-links.
-Lightned the dark theme text slightly.</releaseNotes>
+    <releaseNotes>Added a few free fonts as fallbacks.
+Added a CSS class to style footnotes.</releaseNotes>
   </metadata>
 </package>
